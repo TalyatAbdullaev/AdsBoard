@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AdsBoard</string>
+
+    <!-- Ресурсы для меню "Объявления" -->
+    <string name="ads_menu">Объявления</string>
+    <string name="my_ads_item">Мои объявления</string>
+    <string name="car_item">Авто</string>
+    <string name="mobile_phones_item">Мобильные телефоны</string>
+    <string name="computer_item">Компьюетры</string>
+    <string name="appliances_item">Бытовая техника</string>
+
+    <!-- Ресурсы для меню "Аккаунт" -->
+    <string name="account_menu">Аккаунт</string>
+    <string name="login_item">Вход</string>
+    <string name="logout_item">Выход</string>
+    <string name="registration_item">Регистрация</string>
+</resources>
