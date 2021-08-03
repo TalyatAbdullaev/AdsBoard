@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "376182826025",
+    "project_id": "adsboard-bb709",
+    "storage_bucket": "adsboard-bb709.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376182826025:android:e0cc92e93ef15b544aa838",
+        "android_client_info": {
+          "package_name": "com.example.adsboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "376182826025-ot09unmvh2iof035pco1flfja83q8sp2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxcDfV1IKJ0S8HZkqaS-TEuLgOz1urmiA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "376182826025-ot09unmvh2iof035pco1flfja83q8sp2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

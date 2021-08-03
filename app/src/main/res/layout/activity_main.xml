@@ -10,7 +10,8 @@
     tools:openDrawer="start">
 
     <include
-        layout="@layout/toolbar"
+        android:id="@+id/appToolbar"
+        layout="@layout/app_toolbar"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

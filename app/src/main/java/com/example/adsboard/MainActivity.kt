@@ -1,18 +1,17 @@
 package com.example.adsboard
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
-import androidx.appcompat.widget.Toolbar
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import com.example.adsboard.databinding.ActivityMainBinding
-import com.example.adsboard.databinding.ToolbarBinding
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
-    lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,16 +21,16 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     private fun init() {
-        val toolbar = findViewById<Toolbar>(R.id.toolbar)
-        val toogle = ActionBarDrawerToggle(this, binding.drawerLayout, toolbar, R.string.open, R.string.close)
-        binding.drawerLayout.addDrawerListener(toogle)
-        toogle.syncState()
+        val toggle = ActionBarDrawerToggle(this, binding.drawerLayout, binding.appToolbar.toolbar, R.string.open, R.string.close)
+        binding.drawerLayout.addDrawerListener(toggle)
+        toggle.syncState()
+        binding.navView.setNavigationItemSelectedListener(this)
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        when(item.itemId) {
+        when (item.itemId) {
             R.id.myAds -> {
-
+                Toast.makeText(this, "My Ads", Toast.LENGTH_SHORT).show()
             }
             R.id.car -> {
 
@@ -55,9 +54,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
             }
         }
-
-        binding.drawerLayout.closeDrawers()
+        binding.drawerLayout.closeDrawer(GravityCompat.START)
         return true
     }
-
 }
