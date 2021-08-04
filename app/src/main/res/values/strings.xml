@@ -18,4 +18,11 @@
 
     <string name="open">Open</string>
     <string name="close">Close</string>
+    
+    <!-- Ресурсы для Alert Dialog -->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Зарегистрироваьтся</string>
+    <string name="sign_in">Войти</string>
+    <string name="forgot_pass">Забыли пароль?</string>
 </resources>

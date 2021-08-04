@@ -2,4 +2,5 @@
 <resources>
     <string name="ads_menu">Объявления</string>
     <string name="profile_photo">Profile Photo</string>
+    <string name="forgot_pass">Забыли пароль?</string>
 </resources>

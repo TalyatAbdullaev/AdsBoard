@@ -7,11 +7,17 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import com.example.adsboard.databinding.ActivityMainBinding
+import com.example.adsboard.dialoghelper.DialogConst
+import com.example.adsboard.dialoghelper.DialogHelper
 import com.google.android.material.navigation.NavigationView
+import com.google.firebase.FirebaseApp
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var binding: ActivityMainBinding
+    private val dialogHelper = DialogHelper(this)
+    val mAuth = FirebaseAuth.getInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,10 +51,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
             }
             R.id.registr -> {
-
+                dialogHelper.createSignDialog(DialogConst.SING_UP_CONST)
             }
             R.id.login -> {
-
+                dialogHelper.createSignDialog(DialogConst.SING_IN_CONST)
             }
             R.id.logout -> {
 
